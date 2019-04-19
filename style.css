@@ -1,0 +1,96 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: brown;
+}
+
+h1{
+  margin: 20px;
+  font-size:60px;
+  background:pink;
+
+}
+
+h6 {
+  margin: 20px;
+
+}
+
+
+
+div#heading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  font-family: 'Barrio', cursive;
+  /* border: 3px solid #73AD21; */
+}
+
+
+
+div#new-tweet {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  width: 300px;
+  margin-right: 40px;
+}
+
+#tweet {
+  margin-top: 25px;
+  width: 300px;
+
+}
+
+#button-container {
+  margin-left: 20px;
+  margin-bottom: 20px;
+
+}
+
+#user-profile {
+  margin-left: 20px;
+  font-family: Roboto
+}
+#controlTxtbox{
+  font-family: Roboto
+}
+#usercontrolTxtbox{
+  margin-left: 20px;
+  font-family: Roboto
+}
+#iamuser{
+  margin-left: 20px;
+  font-family: Barrio
+}
+#tweet{
+  font-family: Barrio
+}
+.tweets {
+  padding: 10px;
+  margin-top: 20px;
+  background-color: white;
+  border-bottom: 1px dashed black;
+  font-size:15px;
+}
+
+
+spn {
+  color: #0000FF;
+  cursor: pointer;
+
+}
+
+#twt_box {
+  width: 700px;
+  margin: auto;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  font-size: 20px;
+}
+
+#twt_time {
+  /*color: rgb(65, 65, 65);*/
+  font-size: 15px;
+  color: pink;
+}

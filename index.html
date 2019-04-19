@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="data_generator.js"></script>
+    <meta charset="utf-8" />
+    <title>twiddler</title>
+    <link href="https://fonts.googleapis.com/css?family=Barrio:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <script src="jquery.js"></script>
-    <script src="data_generator.js"></script>
+    <script src="https://timeago.yarp.com/jquery.timeago.js"></script>
+    
   </head>
-  <body>
-    <script>
+  <body class="works_on_smartphone">
+    <div id="heading">
+      <h1>TWIDDLER</h1>
+      <!-- <h5>aloha</h5> -->
+      <div id="button-container">
+        <button id="home" class="btn btn-light">home</button>
+        <button id ="add-tweets" class="timeline btn btn-light">m o r e       t w e e t s</button>
+      </div>
+      <div id="user-profile">
+        <h6>you are entering this world.</h6>
+        <h6>there is dinasour here</h6>
+        <h6>type nothing</h6>
+        <h6>and the dinasour will yell at you</h6>
+        <h6>don't worry </h6>
+        <h6>the dinasour wouldn't eat you</h6>
+      </div>
+      <div id="userIntake">
+        <form>
+          <label for="controlTxtbox2"></label>
+          <textarea class="user-control" id="usercontrolTxtbox" rows="1" placeholder="who's this genius here?"></textarea>
+          <button id="iamuser" class="btn btn-light">L o g i n</button>
+        </form>
+      </div>
 
-      $(document).ready(function(){
-        var $body = $('body');
-        $body.html('');
-
-        var index = streams.home.length - 1;
-        while(index >= 0){
-          var tweet = streams.home[index];
-          var $tweet = $('<div></div>');
-          $tweet.text('@' + tweet.user + ': ' + tweet.message);
-          $tweet.appendTo($body);
-          index -= 1;
-        }
-
-      });
-
-    </script>
+    </div>
+    <div id="new-tweet">
+      <form>
+        <label for="controlTxtbox"></label>
+        <textarea class="form-control" id="controlTxtbox" rows="3" placeholder="what's on your genius mind?"></textarea>
+        <button id="tweet" class="btn btn-light">t w e e t !</button>
+      </form>
+    </div>
+    <div id="twt_box">
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    <script src="fancy.js"></script>
   </body>
 </html>
